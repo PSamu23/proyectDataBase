@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/login.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="lado">
+            <img src="./images/logo1.PNG" width="100%" height="auto" >
+        </div>
+        
+        <div class="parte">
+            <div> 
+                <div class="texto-grande">Lo que esta pasando <p> ahora</div>
+                <div class="texto-mediano">Unete Hoy</div>              
+            </div>
+    
+            <div class="grid-login">
+                <div> <button>Registrase con Google</button> </div>
+                <div> <button>Registrase con Apple</button> </div>
+                <div>------------------------o-----------------------</div>
+                <div><button id="crear-cuenta">Crear Cuenta</button></div>
+                <div>Al registrarte, aceptas los Términos de servicio y la Política <p> de privacidad, incluida la política de Uso de Cookies.</div>
+                <div>¿Ya tienes una cuenta?</div>
+                <div><button id="abrirModal">Iniciar secion</button></div>
+            </div>
+
+
+        </div>
+       
+      </div>
+      
+    <footer>
+        <ul class="footer-container">
+            <li><a href="#" class="footer-container__link">Acerca de</a></li>
+            <li><a href="#" class="footer-container__link">Centro de ayuda</a></li>
+            <li><a href="#" class="footer-container__link">Blog</a></li>
+            <li><a href="#" class="footer-container__link">Estado</a></li>
+            <li><a href="#" class="footer-container__link">Empleos</a></li>
+            <li><a href="#" class="footer-container__link">Recursos para marcas</a></li>
+            <li><a href="#" class="footer-container__link">Publicidad</a></li>
+            <li><a href="#" class="footer-container__link">Marketing</a></li>
+            <li><a href="#" class="footer-container__link">Twitter para empresas</a></li>
+            <li><a href="#" class="footer-container__link">Desarrolladores</a></li>
+            <li><a href="#" class="footer-container__link">Guía</a></li>
+            <li><a href="#" class="footer-container__link">Configuración</a></li>
+            <li><a href="#" class="footer-container__link">© 2024 X corp.</a></li>
+          </ul>
+    </footer>
+
+    <div id="miModal" class="modal">
+        <div class="modal-contenido">
+          <span class="cerrar" id="cerrarModal">&times;</span>
+          <p><form action="/submit" method="post"  >
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre"><br><br>
+            
+            <label for="email">Correo Electrónico:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+            
+            <label for="fechaNacimiento">Fecha de Nacimiento:</label><br>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento"><br><br>
+            
+            <input type="submit" value="Enviar">
+          </form> </p>
+        </div>
+      </div>
+
+      <div id="miModalLogin" class="modal">
+        <div class="modal-contenido">
+          <span class="cerrar" id="cerrarModalLogin">&times;</span>
+          <h3>Inicio de Sesión</h3>
+          <form id="formularioLogin">
+            <label for="nombreUsuario">Nombre de Usuario:</label><br>
+            <input type="text" id="nombreUsuario" name="nombreUsuario" required><br><br>
+            
+            <label for="contrasena">Contraseña:</label><br>
+            <input type="password" id="contrasena" name="contrasena" required><br><br>
+            
+            <input type="submit"  onclick="irAPagina()" value="Iniciar Sesión">
+          </form>
+        </div>
+      </div>
+      
+
+      
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="./java/logg.js" ></script>
+</html>

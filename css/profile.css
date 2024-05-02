@@ -1,0 +1,188 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 20% 45% 35%;
+    height: 100vh;
+}
+.column11 {
+    
+    z-index: 0;
+    border-right: 1px solid #888;
+    position: relative;
+    overflow-y: auto; /* Agregado para permitir el scrolling */
+}
+
+
+.column {
+    padding-left: 50px;
+    padding-top: 5px;
+    border-right: 1px solid #888;
+    position: relative;
+    overflow-y: auto; /* Agregado para permitir el scrolling */
+}
+
+.column:last-child {
+    border-right: none;
+}
+
+.fixed-top {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: left;
+    padding: 10px;
+    z-index: 999; /* Asegura que el div fijo esté por encima del contenido desplazable */
+
+}
+.noticias{
+    
+    border: 1px solid #888;
+    display: grid;
+    grid-template-columns: 10% 90%
+  
+    
+    
+    }
+
+/* Agregamos estilos al campo de búsqueda */
+.search input[type="text"] {
+    padding: 10px;
+    border-radius: 5px; /* Borde redondeado */
+    border: 1px solid #888;
+    background-color: #666; /* Color de fondo gris */
+    color: #fff; /* Color del texto */
+    outline: none; /* Quitamos el borde de enfoque */
+}
+
+/* Estilos para el botón de búsqueda */
+.search button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search button:hover {
+    background-color: #555; /* Cambio de color al pasar el mouse */
+}
+.columnw2{
+    display: flex;
+    justify-content: flex-end;
+    grid-template-columns: 20%;
+    padding: 20px;
+  
+    height: 100%;
+    border: 1px solid #888;
+    
+  
+}
+.sidebar{
+    display: grid;
+    
+  grid-template-rows: repeat(6, 1fr); /* Divide la columna en 6 partes iguales */
+  grid-column-gap: 10px;
+   
+  
+
+}
+.row{
+    display: flex;
+    justify-content: center;
+    grid-column-gap: 10px;
+ 
+    flex: 1;
+}
+
+.contenido_publicacion{
+    display: grid;
+   
+
+
+   
+
+
+}
+.pie_publicaion{
+    display: flex;
+   
+    justify-content: space-between;
+
+}
+
+.marco-redondo {
+    width: 40px; /* Ancho del marco */
+    height: 40px; /* Altura del marco */
+    border-radius: 50%; /* Hace que el borde del marco sea redondo */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que se salga del marco */
+  }
+  
+  .marco-redondo img {
+    width: 100%; /* Ajusta el ancho de la imagen para que ocupe todo el espacio dentro del marco */
+    height: auto; /* Hace que la altura de la imagen se ajuste automáticamente para mantener la proporción */
+  
+  }
+
+#padi_img{
+    padding-left: 20px;
+    padding-top: 5px;
+}
+  
+
+
+
+.inputPublicar {
+    border: none;
+    font-size: 16px;
+    padding: 10px;
+    width: calc(100% - 90px); /* Restar el ancho del botón */
+    box-sizing: border-box;
+    background-color: black; /* Fondo negro */
+    color: white; /* Texto blanco */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Azul */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el mouse */
+}
+
+/*aqui empieza */
+.options{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+#portada{
+background-color: #555;
+height: 200px;
+}
+
+.marco-redondo1 {
+    width: 110px; /* Ancho del marco */
+    height: 110px; /* Altura del marco */
+    border-radius: 50%; /* Hace que el borde del marco sea redondo */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que se salga del marco */
+  }
+  
+  .marco-redondo1 img {
+    width: 100%; /* Ajusta el ancho de la imagen para que ocupe todo el espacio dentro del marco */
+    height: auto; /* Hace que la altura de la imagen se ajuste automáticamente para mantener la proporción */
+  
+  }
